@@ -3,7 +3,6 @@
 Based on [Pavel Kirienko library](https://github.com/pavel-kirienko/xmlrpc-d).
 
 ## Basic usage
-### Client
 ```d
 import xmlrpcc.client;
 
