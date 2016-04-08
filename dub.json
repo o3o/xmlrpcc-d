@@ -1,0 +1,14 @@
+{
+	"name": "xmlrpc-client",
+	"description": "XML RPC client library for D Programming Language",
+	"authors": [ "Pavel Kirienko", "Orfeo Da Viá" ],
+   "targetType": "library",
+   "targetPath": "bin",
+   "libs": ["curl"],
+   "license": "Boost",
+   "homepage": "https://github.com/NCrashed/serial-port",
+   "copyright": "Copyright © 2016, Orfeo Da Viá",
+	"dependencies": {
+	}
+}
+
