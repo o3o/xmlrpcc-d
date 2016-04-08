@@ -1,5 +1,5 @@
 {
-	"name": "xmlrpc-client",
+	"name": "xmlrpcc-d",
 	"description": "XML RPC client library for D Programming Language",
 	"authors": [ "Pavel Kirienko", "Orfeo Da Viá" ],
    "targetType": "library",
