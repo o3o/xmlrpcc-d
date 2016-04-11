@@ -2,6 +2,8 @@ module xmlrpcc.error;
 
 import std.exception;
 import std.stdio;
+import std.variant : Variant;
+import std.format : format;
 
 import xmlrpcc.data;
 

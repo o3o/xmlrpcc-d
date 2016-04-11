@@ -1,15 +1,17 @@
 module xmlrpcc.encoder;
 
-import xmlrpcc.error;
-import xmlrpcc.data;
-import std.xml : Element, Document;
+import std.base64 : Base64;
 import std.conv : to;
+import std.datetime : DateTime;
 import std.exception : enforce;
+import std.format : format;
+import std.stdio : writeln;
 import std.string : join;
 import std.variant : Variant;
-import std.datetime : DateTime;
-import std.base64 : Base64;
-import std.stdio : writeln;
+import std.xml : Element, Document;
+
+import xmlrpcc.error;
+import xmlrpcc.data;
 
 @trusted:
 
