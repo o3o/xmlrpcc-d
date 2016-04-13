@@ -1,6 +1,6 @@
 # makefile relelase 0.1.0
 NAME = xmlrpcc-d
-PROJECT_VERSION = 0.2.0
+PROJECT_VERSION = 0.2.1
 
 ROOT_SOURCE_DIR = src
 BIN = bin
