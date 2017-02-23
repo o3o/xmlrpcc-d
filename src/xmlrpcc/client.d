@@ -88,11 +88,21 @@ class Client {
       timeout_ = timeout;
    }
 
+   @property nothrow void verifyPeer(bool val){
+       this.verifyPeer_ = val;
+   }
+
+   @property nothrow bool verifyPeer(){
+       return verifyPeer_;
+   }
+
+
 private:
    string performHttpRequest(string data) {
       try {
          auto http = curl.HTTP(serverUri_);
          http.operationTimeout = timeout_;
+         http.verifyPeer = verifyPeer;
          return to!string(curl.post(serverUri_, data, http));
       }
       catch (curl.CurlException ex)
@@ -101,6 +111,7 @@ private:
 
    const string serverUri_;
    Duration timeout_;
+   bool verifyPeer_;
 }
 
 class TransportException : XmlRpcException {
